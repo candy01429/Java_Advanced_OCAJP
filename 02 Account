@@ -28,3 +28,8 @@ public class Account{
     }
   }
 }
+
+/*Step2 - 測試存款&提款功能*/
+public class TestBank{
+  Account.setBankName("台新銀行");
+}
