@@ -15,15 +15,15 @@ public class Account{
 
   // Balance getter & setter
   public int getBalance(int password){
-    if(password == 1234){
+    if(password == 1234){  // 輸入正確密碼才能顯示餘額
       return balance;
     } else {
       return 0;
     }
       // return (password == 1234)?balance:0;
   }
-  public int getBalance(int password){
-    if((this.balance + balance) >= 0){
+  public int setBalance(int password){
+    if((this.balance + balance) >= 0){ // 提款or存款
         this.balance += balance;
     }
   }
