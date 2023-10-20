@@ -1,0 +1,22 @@
+/*Printf 演示1*/
+package com;
+
+public class TestPrintf{
+  public static void main(String[] args){
+    int r = 10;
+    double area = Math.pow(r,2) * Math.PI;
+    System.out.println("半徑" + r + "的圓面積是" + area);
+    System.out.printf("半徑 %d 的圓面積是 %.2f\n", r, area);
+  }
+}
+
+/*Printf 演示2*/
+package com;
+
+public class TestPrintf2{
+  public static void main(String[] args){
+    for(int i=1; i<=10 ;i++){
+      System.out.printf("%02d\n" ,i);
+    }
+  }
+}
