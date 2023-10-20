@@ -1,2 +1,10 @@
 /*Step1 - 建立銀行帳戶Class*/
-public 
+public class Account{
+  // 銀行
+  private static String bankName;
+  // 餘額
+  private int balance;
+
+  // getter & setter
+  
+}
