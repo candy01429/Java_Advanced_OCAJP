@@ -5,6 +5,26 @@ public class Account{
   // 餘額
   private int balance;
 
-  // getter & setter
-  
+  // BankName getter & setter
+  public static String getBankName(){
+    return bankName;
+  }
+  public static void setBankName(String bankName){
+    Account.bankName = bankName;
+  }
+
+  // Balance getter & setter
+  public int getBalance(int password){
+    if(password == 1234){
+      return balance;
+    } else {
+      return 0;
+    }
+      // return (password == 1234)?balance:0;
+  }
+  public int getBalance(int password){
+    if((this.balance + balance) >= 0){
+        this.balance += balance;
+    }
+  }
 }
