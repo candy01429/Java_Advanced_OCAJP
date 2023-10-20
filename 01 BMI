@@ -25,3 +25,20 @@ public class TestBMI{
     System.out.printf("w=%.1f, h=%.1f, bmi=%.2f\n", b1.w, b1.h, b1.getBmi());
   }
 }
+
+/*Step3 - BMI分性別計算*/
+package com;
+
+public class DemoBMI{
+  public static void main(String[] args) {
+    
+  }
+
+  public static void clacBMI(double h, double w, char sex) {
+    double bmi = w / Math.pow(h/100,2);
+    If(sex == 'F'){
+      bmi *= 0.9;
+    }
+    System.out.println(bmi);
+  }
+}
