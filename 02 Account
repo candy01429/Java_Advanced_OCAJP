@@ -1,4 +1,5 @@
 /*Step1 - 建立銀行帳戶Class*/
+package day02.bank;
 public class Account{
   // 銀行
   private static String bankName;
@@ -30,6 +31,7 @@ public class Account{
 }
 
 /*Step2 - 測試存款&提款功能*/
+package day02.bank;
 public class TestBank{
   public static void main(String[] args){
     Account.setBankName("台新銀行");
