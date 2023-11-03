@@ -15,3 +15,7 @@ public class David{
     coco.play();
   }
 }
+
+/**/
+package day02.;
+imporrt day02.?.Coco;
