@@ -1,5 +1,5 @@
 /*Step1 - 建立BMI Class*/
-package com;
+package day01.bmi;
 
 public class BMI{
   public double h;
@@ -15,7 +15,7 @@ public class BMI{
 }
 
 /*Step2 - 建立BMI 測試*/
-package com;
+package day01.bmi;
 
 public class TestBMI{
   public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class TestBMI{
 }
 
 /*Step3 - BMI分性別計算*/
-package com;
+package day01.bmi;
 
 public class DemoBMI{
   public static void main(String[] args) {
