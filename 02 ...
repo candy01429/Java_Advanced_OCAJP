@@ -5,3 +5,13 @@ public class Coco{
     System.out.println("錢")  
   }
 }
+
+/**/
+package day02.;
+public class David{
+  protected void play(){
+    System.out.println("Magic")
+    Coco coco = new Coco();
+    coco.play();
+  }
+}
