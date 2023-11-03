@@ -1,5 +1,5 @@
 /*Printf 演示1*/
-package com;
+package day01.printf;
 
 public class TestPrintf{
   public static void main(String[] args){
@@ -11,7 +11,7 @@ public class TestPrintf{
 }
 
 /*Printf 演示2*/
-package com;
+package day01.printf;
 
 public class TestPrintf2{
   public static void main(String[] args){
