@@ -1,14 +1,14 @@
 /**/
-package day02.;
-public class Coco{
+package day02.parents;
+public class Coco{ // 媽媽
   protected void play(){
     System.out.println("錢")  
   }
 }
 
 /**/
-package day02.;
-public class David{
+package day02.parents;
+public class David{ // 爸爸
   protected void play(){
     System.out.println("Magic")
     Coco coco = new Coco();
@@ -17,5 +17,16 @@ public class David{
 }
 
 /**/
-package day02.;
-imporrt day02.?.Coco;
+package day02.?;
+imporrt day02.?.Coco; // 匯入Coco
+public class Baby extend Coco{ 
+  public void play(){
+    System.out.println("奶嘴")
+    super.play();
+  }
+
+  public static void main(String[] args){
+    Baby baby = new Baby();
+    baby.play();
+  }
+}
