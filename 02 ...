@@ -1,4 +1,4 @@
-/**/
+/*建立家長的class*/
 package day02.parents;
 public class Coco{ // 媽媽
   protected void play(){
@@ -6,20 +6,19 @@ public class Coco{ // 媽媽
   }
 }
 
-/**/
 package day02.parents;
 public class David{ // 爸爸
   protected void play(){
-    System.out.println("Magic")
+    System.out.println("開車")
     Coco coco = new Coco();
     coco.play();
   }
 }
 
-/**/
-package day02.?;
-imporrt day02.?.Coco; // 匯入Coco
-public class Baby extend Coco{ 
+/*建立小孩的class*/
+package day02.child;
+imporrt day02.parents.Coco; // 匯入Coco
+public class Baby extend Coco{ // 小孩
   public void play(){
     System.out.println("奶嘴")
     super.play();
@@ -28,5 +27,20 @@ public class Baby extend Coco{
   public static void main(String[] args){
     Baby baby = new Baby();
     baby.play();
+  }
+}
+
+package day02.child;
+import  day02.parents.Coco;
+public class Alice { // 小孩
+  public void play(){
+    System.out.println("夢遊")
+    Coco coco = new Coco();
+    //coco.play();
+  }
+
+  public static void main(String[] args){
+    Alice alice = new Alice();
+    alice.play();
   }
 }
