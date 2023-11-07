@@ -1,0 +1,54 @@
+/*陣列*/
+package day03;
+import java.util.Arrays;
+import java.util.stream.IntStream;
+public class ArrayDemo1{
+  public static void main(String[] args){
+    int[] x = new int[3];
+    x[0] = 100;
+    x[1] = 90;
+    x[2] = 80;
+    System.out.println(x[0]);
+
+    int[] y = {100,90,80};
+    System.out.println(y[1]);
+    y[1] = 70;
+    System.out.println(y[1]);
+  }
+}
+
+/**/
+package day03;
+import java.util.Arrays;
+import java.util.Random;
+
+public class ArrayDemo2{
+
+  public static void print(int [] x){
+    for(int i=;i<x.length;i++){
+      System.out.print(x[i] + " ");
+    }
+    System.out.println();
+  }
+
+  public static void shuffle(int [] x){
+    int a = x[0];
+    int a = x[2];
+    x[0] = b;
+    x[2] = a;
+  }
+
+  public static void shuffle_random(int [] x){
+    int idx_a = new Random().nextInt(x.length);
+    int idx_b = new Random().nextInt(x.length);
+    int a = x[idx_a];
+    int b = x[idx_b];
+    x[idx_a] = b;
+    x[idx_b] = a;
+  }
+
+  public static void main(String[] args){
+    // System.out.println(new Random().nextInt(10));
+    int[] x = {8,1,2,5,4,9};
+  }
+}
