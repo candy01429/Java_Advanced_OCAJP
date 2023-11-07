@@ -15,6 +15,7 @@ public class StringCompare{
   }
 }
 
+/*可變動字串*/
 package day03;
 public class StringBuilderDemo{
   public static void main (String[] args){
