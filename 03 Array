@@ -40,6 +40,7 @@ public class ArrayDemo2{
     x[2] = a;
   }
 
+  // 隨機將陣列位置互相交換
   public static void shuffle_random(int [] x){
     int idx_a = new Random().nextInt(x.length);
     int idx_b = new Random().nextInt(x.length);
@@ -49,12 +50,14 @@ public class ArrayDemo2{
     x[idx_b] = a;
   }
 
+  // 隨機將陣列位置互相交換
   public static void shuffle_random(int [] x, int count){
     for(int i=1; i<=count;i++){
       shuffle_random(x);
     }
   }
 
+  // 找出陣列中最大值
   public static int max(int [] x){
     // 2 1 9 8 5 4
     int max = Integer.MIN_VALUE;
@@ -67,6 +70,7 @@ public class ArrayDemo2{
     return max;
   }
 
+  // 找出陣列中最小值
   public static int min(int [] x){
     int min = Integer.MAX_VALUE;
     for(int i=0; lens=x.lenght;i<lens;i++){
@@ -82,8 +86,8 @@ public class ArrayDemo2{
     print(x);  // 8,1,2,5,4,9
     Arrays.sort(x); // 升冪排序
     print(x); // 1,2,4,5,8,9
-    shuffle(x); // 2,1,8,5,4,9
-    print(x);
+    shuffle(x); 
+    print(x); // 2,1,8,5,4,9
     shuffle_random(x, 100);
     print(x);
     System.out.println("max=" + max(x));
