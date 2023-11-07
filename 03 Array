@@ -2,6 +2,7 @@
 package day03;
 import java.util.Arrays;
 import java.util.stream.IntStream;
+
 public class ArrayDemo1{
   public static void main(String[] args){
     int[] x = new int[3];
@@ -23,7 +24,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class ArrayDemo2{
-
+  //print出陣列所有的元素
   public static void print(int [] x){
     for(int i=0;i<x.length;i++){
       System.out.print(x[i] + " ");
@@ -31,6 +32,7 @@ public class ArrayDemo2{
     System.out.println();
   }
 
+  // 將陣列的第[0],[2]位置互相交換
   public static void shuffle(int [] x){
     int a = x[0];
     int b = x[2];
@@ -77,10 +79,10 @@ public class ArrayDemo2{
   public static void main(String[] args){
     // System.out.println(new Random().nextInt(10));
     int[] x = {8,1,2,5,4,9};
-    print(x);
-    Arrays.sort(x);
-    print(x);
-    shuffle(x);
+    print(x);  // 8,1,2,5,4,9
+    Arrays.sort(x); // 升冪排序
+    print(x); // 1,2,4,5,8,9
+    shuffle(x); // 2,1,8,5,4,9
     print(x);
     shuffle_random(x, 100);
     print(x);
