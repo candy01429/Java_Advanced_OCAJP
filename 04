@@ -1,0 +1,27 @@
+package day04;
+
+public class ?{
+  public static void main(String[] args){
+    int x = 0;
+    System.out.println(x++); // 未儲存
+    System.out.println(x);
+
+    int y = 0;
+    y = y++;  // 儲存
+    System.out.println(y);
+  }
+}
+
+public class ?{
+  public static void main(String[] args){
+    int a = 0;
+    int b = 0;
+
+    if(a > 0 & ++b > 0){
+      System.out.println("Pass");
+    } else {
+      System.out.println("Fail");
+    }
+    System.out.println(b);
+  }
+}
