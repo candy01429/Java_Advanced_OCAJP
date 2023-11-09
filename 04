@@ -25,3 +25,24 @@ public class ?{
     System.out.println(b);
   }
 }
+
+public class ?{
+  public static void update(int[] y){
+    y[0] = 40;
+  }
+
+  public static void update(String s2){
+    s2 = "40";
+  }
+  
+  public static void main(String[] args){
+    int[] x = {100,80};
+    System.out.println(x[0]); // 100
+    update(x);
+    System.out.println(x[0]); // 40
+
+    String s1 = "100";
+    update(s1);
+    System.out.println(s1);
+  }
+}
