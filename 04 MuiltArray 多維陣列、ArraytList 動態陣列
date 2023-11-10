@@ -62,3 +62,10 @@ public class MuiltArray_1{ // 多維陣列
     return s/avg;
   }
 }
+
+public class ArrayListDemo{
+  public static void main(String[] args){
+
+
+  }
+}
