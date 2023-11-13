@@ -1,0 +1,13 @@
+package day05;
+public class DoWhileLoop{
+  public static void main(String[] args){
+    int ans = new Random().nextInt(99) + 1;
+    int min = 0;
+    int max = 100;
+
+    do{
+      Scanner sc = new Scanner(System.in);
+      System.out.print
+    }
+  }
+}
