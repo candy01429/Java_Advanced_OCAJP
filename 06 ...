@@ -1,6 +1,6 @@
 package day06;
 
-public class Score{
+public class Score{ // 成績
   private String name;
   private int chinese;
   private int math;
