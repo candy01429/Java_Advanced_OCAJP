@@ -7,6 +7,14 @@ public class Score{
   private int english;
   private int sum;
 
+  public Score(String name, int chinese, int math, int english) {
+        this.name = name;
+        this.chinese = chinese;
+        this.math = math;
+        this.english = english;
+        this.sum = chinese + math + english;
+  }
+
   public String getName() {
         return name;
   }
@@ -39,5 +47,8 @@ public class Score{
         this.english = english;
   }
 
-  
+  @Override
+  public String toString() {
+        return "Score{" + "name=" + name + ", chinese=" + chinese + ", math=" + math + ", english=" + english + ", sum=" + sum + '}';
+  }
 }
