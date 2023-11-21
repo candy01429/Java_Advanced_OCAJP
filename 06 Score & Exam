@@ -9,32 +9,25 @@ public class Student{ // 學生基本資料
     this.name = name;
     this.sex = sex;
     this.age = age;
-  }  
-
+  }
   public String getName() {
         return name;
   }
-
   public void setName(String name) {
         this.name = name;
   }
-
   public char getSex() {
         return sex;
   }
-
   public void setSex(char sex) {
         this.sex = sex;
   }
-
   public int getAge() {
         return age;
   }
-
   public void setAge(int age) {
         this.age = age;
   }
-
   @Override
   public String toString() {
         return "Student{" + "name=" + name + ", sex=" + sex + ", age=" + age + '}';
@@ -61,35 +54,27 @@ public class Score{ // 成績
   public Student getStud() {
         return stud;
   }
-
   public void setStud(Student stud) {
         this.stud = stud;
   }
-
   public int getChinese() {
         return chinese;
   }
-
   public void setChinese(int chinese) {
         this.chinese = chinese;
   }
-
   public int getMath() {
         return math;
   }
-
   public void setMath(int math) {
         this.math = math;
   }
-
   public int getEnglish() {
         return english;
   }
-
   public void setEnglish(int english) {
         this.english = english;
   }
-
   @Override
   public String toString() {
         return "Score{" + "name=" + name + ", chinese=" + chinese + ", math=" + math + ", english=" + english + ", sum=" + sum + '}';
