@@ -52,3 +52,14 @@ public class Score{ // 成績
         return "Score{" + "name=" + name + ", chinese=" + chinese + ", math=" + math + ", english=" + english + ", sum=" + sum + '}';
   }
 }
+
+package day06;
+import java.util.Arrays;
+import java.util.List;
+public class Exam{
+  public static void main(String[] args){
+    Score s1 = new Score("John", 100 ,90 ,80);
+    Score s1 = new Score("Mary", 80 ,100 ,70);
+    Score s1 = new Score("John", 50 ,100 ,100);
+  }
+}
