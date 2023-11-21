@@ -65,5 +65,7 @@ public class Exam{
     System.out.println(s1);
     System.out.println(s2);
     System.out.println(s3);
+
+    List<Score> list = Arrays.asList(s1, s2, s3);
   }
 }
