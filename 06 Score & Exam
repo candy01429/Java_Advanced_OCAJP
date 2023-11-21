@@ -1,19 +1,15 @@
 package day06;
 
-public class Score{ // 成績
+public class Student{ // 學生基本資料
   private String name;
-  private int chinese;
-  private int math;
-  private int english;
-  private int sum;
+  private char sex;
+  private int age;
 
-  public Score(String name, int chinese, int math, int english) {
-        this.name = name;
-        this.chinese = chinese;
-        this.math = math;
-        this.english = english;
-        this.sum = chinese + math + english;
-  }
+  public Student(String name, char sex, int age){
+    this.name = name;
+    this.sex = sex;
+    this.age = age;
+  }  
 
   public String getName() {
         return name;
@@ -21,6 +17,53 @@ public class Score{ // 成績
 
   public void setName(String name) {
         this.name = name;
+  }
+
+  public char getSex() {
+        return sex;
+  }
+
+  public void setSex(char sex) {
+        this.sex = sex;
+  }
+
+  public int getAge() {
+        return age;
+  }
+
+  public void setAge(int age) {
+        this.age = age;
+  }
+
+  @Override
+  public String toString() {
+        return "Student{" + "name=" + name + ", sex=" + sex + ", age=" + age + '}';
+  }
+}
+
+package day06;
+
+public class Score{ // 成績
+  private Student stud;
+  private int chinese;
+  private int math;
+  private int english;
+  private int sum;
+
+  public Score(Student stud, int chinese, int math, int english) {
+        this.stud = stud;
+        this.chinese = chinese;
+        this.math = math;
+        this.english = english;
+        this.sum = chinese + math + english;
+  }
+
+  public Student getStud() {
+        return stud;
+  }
+
+  public void setStud(Student stud) {
+        this.stud = stud;
   }
 
   public int getChinese() {
