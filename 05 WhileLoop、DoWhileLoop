@@ -1,8 +1,26 @@
+/*成績及格&不及格*/
+package day05;
+import java.util.Random;
+
+public class WhileLoop{
+  public static void main(String[] args){
+
+    while (true){
+       int score = new Random().nextInt(101); 
+       if (score >= 60)
+         System.out.println(score);
+       else
+         break;
+    }
+  }
+}
+
+/*1~99 猜數字遊戲*/
 package day05;
 import java.util.Random;
 import java.util.Scanner;
 
-public class DoWhileLoop{ // 1~99 猜數字遊戲
+public class DoWhileLoop{ 
   public static void main(String[] args){
     int ans = new Random().nextInt(99) + 1;
     int min = 0;
