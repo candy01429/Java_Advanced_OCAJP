@@ -1,7 +1,7 @@
 package day04;
 import java.math.BigDecimal;
 
-public class WrapperDemo{
+public class WrapperDemo{ // 型別包裝
   public static void main(String[] args){
     int max = Integer.MAX_VALUE;
     System.out.println(max); //2147483647
@@ -10,6 +10,14 @@ public class WrapperDemo{
     String math = "90"; // 字串
     int int_ch = Integer.parseInt(ch);  // 字串轉為數字,並儲存於新的變數
     int int_math = Integer.parseInt(math);  // 字串轉為數字,並儲存於新的變數
-    System.out.println(int_ch + int_math);
+    System.out.println(int_ch + int_math);  // 100+90=190
+
+    boolean b = Boolean.parseBoolean("TRUE"); // 布林值
+    System.out.println(b); // true
+
+    // 浮點數型態測試
+    System.out.println(0.1 + 0.1 == 0.2); // true
+    System.out.println(0.1 + 0.1 + 0.1 == 0.3); // false
+    System.out.println(0.1 + 0.1 + 0.1); // 0.30000000000000004
   }
 }
