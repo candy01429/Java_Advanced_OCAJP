@@ -1,0 +1,15 @@
+package day04;
+import java.math.BigDecimal;
+
+public class WrapperDemo{
+  public static void main(String[] args){
+    int max = Integer.MAX_VALUE;
+    System.out.println(max); //2147483647
+
+    String ch = "100";  // 字串
+    String math = "90"; // 字串
+    int int_ch = Integer.parseInt(ch);  // 字串轉為數字,並儲存於新的變數
+    int int_math = Integer.parseInt(math);  // 字串轉為數字,並儲存於新的變數
+    System.out.println(int_ch + int_math);
+  }
+}
