@@ -19,5 +19,14 @@ public class WrapperDemo{ // 型別包裝
     System.out.println(0.1 + 0.1 == 0.2); // true
     System.out.println(0.1 + 0.1 + 0.1 == 0.3); // false
     System.out.println(0.1 + 0.1 + 0.1); // 0.30000000000000004
+
+    // BigDecimal測試
+    BigDecimal a1 = new BigDecimal("0.1");
+    BigDecimal a2 = new BigDecimal("0.1");
+    BigDecimal a3 = new BigDecimal("0.1");
+
+    double a4 = a1.add(a2).add(a3).doubleValue();
+    System.out.println(a4);
+    System.out.println(a4 == 0.3);
   }
 }
