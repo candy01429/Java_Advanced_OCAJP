@@ -1,0 +1,22 @@
+package day05;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Algorithm_1{
+  public static void main(String[] args){
+    ArrayList<Integer> nums = new ArrayList<>();
+
+    WhileLoop:
+    while (nums.size() < 5) {
+      int n = new Random().nextInt(10) + 1;
+      for(int num : nums){
+        if(num == n){
+          continue WhileLoop;
+        }
+      }
+      nums.add(n);
+    }
+    System.out.println(nums);
+  }
+}
