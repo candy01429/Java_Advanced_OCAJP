@@ -3,13 +3,13 @@ package 05_Algorithm;
 import java.util.ArrayList;
 import java.util.Random;
 
-Public class Algorithm{
+public class Algorithm{
   public static void main(String[] args){
     ArrayList<Integer> nums = new ArrayList<>(); // 動態陣列
 
     WhileLoop:
     while (nums.size() < 5){ // size 陣列數量
-        int n = new Random().nextInt(10) + 1;
+        int n = new Random().nextInt(10) + 1; // 隨機1~10整數
         for(int num : nums){
             // System.out.printf("nums = %s, num = %d, n = %d\n", nums, num, n);
             if(num == n){
@@ -21,3 +21,12 @@ Public class Algorithm{
     System.out.println(nums);
   }
 }
+
+package 05_05_Algorithm;
+
+public class Algorithm_1 {
+  public static void main(String[] args){
+
+  }
+}
+  
