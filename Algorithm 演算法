@@ -1,11 +1,23 @@
 package 05_Algorithm;
 
-import java.util.ArryList;
+import java.util.ArrayList;
 import java.util.Random;
 
 Public class Algorithm{
   public static void main(String[] args){
-    ArrayList<Integer> nums = new ArrayList<>();
+    ArrayList<Integer> nums = new ArrayList<>(); // 動態陣列
+
+    WhileLoop:
+    while (nums.size() < 5){ // size 陣列數量
+        int n = new Random().nextInt(10) + 1;
+        for(int num : nums){
+            // System.out.printf("nums = %s, num = %d, n = %d\n", nums, num, n);
+            if(num == n){
+                continue WhileLoop;
+            }
+        }
+        nums.add(n);
+    }
+    System.out.println(nums);
   }
 }
-
