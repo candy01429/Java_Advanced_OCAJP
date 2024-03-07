@@ -22,7 +22,7 @@ public class Algorithm{
   }
 }
 
-package 05_05_Algorithm;
+package 05_Algorithm;
 
 public class Algorithm_1 {
   public static void main(String[] args){
