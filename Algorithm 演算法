@@ -1,0 +1,11 @@
+package 05_Algorithm;
+
+import java.util.ArryList;
+import java.util.Random;
+
+Public class Algorithm{
+  public static void main(String[] args){
+    ArrayList<Integer> nums = new ArrayList<>();
+  }
+}
+
