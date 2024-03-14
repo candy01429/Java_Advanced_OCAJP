@@ -72,6 +72,20 @@ public class ListNodeTest3{
     }
     cur = cur.next;
     cur.next = (a == null) ? b : a;
-    System
+    System.out.println(c);
+  }
+}
+
+package day07;
+public class ListNodeTest4{
+  public static void main(String[] args){
+    // a 串列
+    ListNode a = new ListNode(1);
+    ListNode a3 = new ListNode(3);
+    ListNode a5 = new ListNode(5);
+    ListNode a7 = new ListNode(7);
+
+    a.next = a3;
+    
   }
 }
