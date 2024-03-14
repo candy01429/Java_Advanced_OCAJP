@@ -86,6 +86,17 @@ public class ListNodeTest4{
     ListNode a7 = new ListNode(7);
 
     a.next = a3;
-    
+    a3.next = a5;
+    a5.next = a7;
+
+    // b 串列
+    ListNode b = new ListNode(2);
+    ListNode b4 = new ListNode(4);
+    b.next = b4;
+
+    System.out.println(a);
+    System.out.println(b);
+
+    ListNode c = mergeTwoLists(a, b);
   }
 }
