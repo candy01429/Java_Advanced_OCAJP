@@ -18,3 +18,15 @@ public class Phone extends Computer{ // 繼承(父子)
   }
 }
 
+package day07;
+public class DisplayDevice{
+  public static void main(String[] args){
+    Computer computer = new Computer();
+    computer.draw();
+    computer.power();
+
+    Phone phone = new Phone();
+    phone.
+  }
+}
+
