@@ -5,13 +5,16 @@ public class Machine{
   }
 }
 
+package day07;
 public class Computer extends Machine{ // 繼承(父子)
   public void draw(){
     System.out.println("繪圖電腦");
   }
 
+package day07;
 public class Phone extends Computer{ // 繼承(父子)
   public void call(){
     System.out.println("打電話")
   }
 }
+
