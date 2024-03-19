@@ -19,14 +19,38 @@ public class Phone extends Computer{ // 繼承(父子)
 }
 
 package day07;
-public class DisplayDevice{
+public class DisplayDevice{ // 顯示裝置
   public static void main(String[] args){
     Computer computer = new Computer();
     computer.draw();
     computer.power();
 
     Phone phone = new Phone();
-    phone.
+    phone.call();
+    phone.draw();
+    phone.power();
   }
 }
 
+package day07;
+public class StaticInstance{ // 靜態
+  public static void main(String[] args){
+    a();
+    StaticInstance x = new StaticInstance();
+    x.b();
+    x.c();
+  }
+
+  public static void a(){
+    System.out.println("a");
+  }
+
+  public void b(){
+    System.out.println("b");
+    c();
+  }
+
+  public void c(){
+    System.out.println("c");
+  }
+}
