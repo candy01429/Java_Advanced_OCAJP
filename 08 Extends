@@ -1,0 +1,36 @@
+package day08_extends;
+public class Father{
+  public void play(){
+    System.out.println("Golf");
+  }
+}
+
+package day08_extends;
+public class Son extends Father{
+  @Override
+  public void play(){
+    System.out.println("LoL");
+  }
+}
+
+package day08_extends;
+public class Family{
+  public static void main(String[] args){
+    Son son = new Son();
+    son.play();
+  }
+}
+
+package day08_extends;
+public class Varage{
+  public static void main(String[] args){
+    Varage v = new Varage();
+    int[] nums = {100,90,80};
+
+    System.out.println(v.cala(nums));
+    System.out.println(v.calc(100,90,80));
+    System.out.println();
+    System.out.println();
+    System.out.println();
+  }
+}
