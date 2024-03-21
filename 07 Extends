@@ -54,3 +54,21 @@ public class StaticInstance{ // 靜態
     System.out.println("c");
   }
 }
+
+package day07;
+public class Machine{
+  public void power(){
+  }
+}
+
+package day07;
+public class Computer{
+  public void draw(){
+  }
+}
+
+package day07;
+public class Phone extends Machine{
+  public void call(){
+  }
+}
