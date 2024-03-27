@@ -5,6 +5,11 @@ public class Animal{
   private int feet;
   private String name;
 
+  public Animal(int feet , String name){
+    this.feet = feet;
+    this.name = name;
+  }
+
   // Getter & Setter
   public int getFeet(){
     return feet;
@@ -14,5 +19,15 @@ public class Animal{
     this.feet = feet;
   }
 
+  public String getName(){
+    return name;
+  }
 
+  public void setName(String name){
+    this.name = name;
+  }
+
+  public void move(){
+    System.out.println("會動");
+  }
 }
