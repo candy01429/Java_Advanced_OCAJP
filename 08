@@ -31,3 +31,8 @@ public class Animal{
     System.out.println("會動");
   }
 }
+
+package 08;
+public class Bird extends Animal{
+
+}
