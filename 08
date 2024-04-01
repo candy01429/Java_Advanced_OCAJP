@@ -1,6 +1,6 @@
 package day08;
 
-public class Animal{
+public class Animal{ // 動物(父類別)
   
   private int feet;
   private String name;
@@ -33,6 +33,51 @@ public class Animal{
 }
 
 package 08;
-public class Bird extends Animal{
+public class Bird extends Animal{ // 鳥(父/子類別)
+  public Bird(int feet, String name){
+    super(feet, name);
+  }
 
+  @override
+  public void move(){
+    System.out.println("會飛");
+  }
+
+  public void eat(){
+    System.out.println("小麥");
+  }
+}
+
+package day08;
+public class Lion extends Animal{ // 獅子(子類別)
+
+  public Lion(int feet, String name){
+    super(feet, name);
+  }
+
+  @override
+  public void move(){
+    System.out.println("會跑");
+  }
+
+  public void eat(){
+    System.out.println("肉");
+  }
+}
+
+package day08;
+public class Ostrich extends Bird{ // 鴕鳥(子類別)
+
+  public Lion(int feet, String name){
+    super(feet, name);
+  }
+
+  @override
+  public void move(){
+    System.out.println("會跑");
+  }
+
+  public void eat(){
+    System.out.println("肉");
+  }
 }
